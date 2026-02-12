@@ -1,0 +1,2 @@
+let e=(e,o)=>new Promise(r=>{setTimeout(()=>{r({value:e,ms:o})},o)});Promise.all([e("A",500),e("B",1e3),e("C",300),e("D",700),e("E",200)]).then(e=>{e.forEach(({value:e,ms:o})=>{console.log(e,o)})}).catch(e=>console.error("Error!",e));let o=e=>new Promise((o,r)=>{setTimeout(()=>{o(e)},Math.floor(4001*Math.random()+1e3))});Promise.race([o("a"),o("b"),o("c"),o("d"),o("e")]).then(e=>console.log(e)).catch(e=>console.error(e));
+//# sourceMappingURL=second_promise.f376fa9f.js.map
